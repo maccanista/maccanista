@@ -17,6 +17,21 @@
             text-align: center;
             padding: 20px;
         }
+        
+        .nav {
+            background-color: #2C1810;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
         header h1 {
             margin: 0;
         }
@@ -28,46 +43,41 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
         }
         h2 {
             color: #4b2e39;
             text-align: center;
         }
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-        textarea {
-            height: 150px;
-            resize: vertical;
-        }
-        button {
-            background-color: #e67e22;
-            color: white;
-            border: none;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: background-color 0.3s;
-        }
-        button:hover {
-            background-color: #d35400;
-        }
         .contact-info {
             text-align: center;
             margin-top: 30px;
             color: #555;
+        }
+        .contact-button {
+            display: inline-block;
+            background-color: #1877F2;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .contact-button:hover {
+            background-color: #1258a7;
+        }
+        .shopee-link {
+            display: block;
+            margin-top: 15px;
+            font-size: 16px;
+            color: #d35400;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .shopee-link:hover {
+            color: #e67e22;
         }
     </style>
 </head>
@@ -77,24 +87,26 @@
         <h1>Hương và Hạt</h1>
         <p>Liên Hệ Với Chúng Tôi</p>
     </header>
+    
+    <nav class="nav">
+        <a href="index.html">Trang chủ</a>
+        <a href="cà phê.html">Sản phẩm</a>
+        <a href="aboutus.html">Về chúng tôi</a>
+        <a href="lienhe.html">Liên hệ</a>
+    </nav>
 
     <div class="container">
-        <h2>Gửi Thông Tin Liên Hệ</h2>
-        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-            <input type="text" name="name" placeholder="Họ và Tên" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="text" name="subject" placeholder="Chủ Đề" required>
-            <textarea name="message" placeholder="Nội dung tin nhắn" required></textarea>
-            <button type="submit">Gửi Liên Hệ</button>
-        </form>
+        <h2>Liên Hệ Qua Fanpage</h2>
+        <p>Để liên hệ với chúng tôi, vui lòng nhấn vào nút bên dưới để truy cập fanpage Maccanista.</p>
+        <a href="https://www.facebook.com/profile.php?id=61573372096318" class="contact-button" target="_blank">Liên hệ qua Fanpage</a>
 
         <div class="contact-info">
             <h3>Thông Tin Liên Hệ</h3>
             <p>Địa chỉ: 123 Đường ABC, Quận XYZ, TP.HCM</p>
-            <p>Email: lienhe@huongvahat.com</p>
             <p>Hotline: 0123 456 789</p>
+            <p>Nếu bạn muốn đặt hàng, hãy ghé thăm Shopee của chúng tôi:</p>
+            <a href="https://shopee.vn/maccanista" class="shopee-link" target="_blank">Mua hàng trên Shopee</a>
         </div>
-            <a href="index.html" class="home-button">Quay về trang chủ</a>
-        </div>
+    </div>
 </body>
 </html>
