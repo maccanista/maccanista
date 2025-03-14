@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combo Đặc Biệt - Maccanista</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f8f8;
+        }
+
+        .header {
+            background-color: #4A341F;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .nav {
+            background-color: #2C1810;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .combo-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #8B4513;
+            text-align: center;
+        }
+
+        .product {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+        }
+
+        .product img {
+            width: 100px;
+            height: auto;
+            margin: 10px;
+        }
+
+        .product:last-child {
+            border-bottom: none;
+        }
+
+        .bonus {
+            font-weight: bold;
+            color: #D2691E;
+        }
+
+        .left-align {
+            justify-content: flex-start;
+        }
+
+        .right-align {
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Maccanista</h1>
+        <p>Hương vị tinh túy từ thiên nhiên</p>
+    </header>
+
+    <nav class="nav">
+        <a href="index.html">Trang chủ</a>
+        <a href="san-pham.html">Sản phẩm</a>
+        <a href="aboutus.html">Về chúng tôi</a>
+        <a href="lien-he.html">Liên hệ</a>
+    </nav>
+
+    <div class="combo-container">
+        <h2>Combo Đặc Biệt - Cà Phê & Hạt Macca</h2>
+        <div class="product left-align">
+            <img src="coffee.jpg" alt="Túi cà phê rang xay">
+            <div>
+                <h3>☕ 1 Túi Cà Phê Rang Xay (500g)</h3>
+                <p>Hương vị đậm đà, nguyên chất, phù hợp cho những ai yêu thích cà phê truyền thống.</p>
+            </div>
+        </div>
+        <div class="product right-align">
+            <div>
+                <h3>🥜 1 Hũ Hạt Macca (500g)</h3>
+                <p>Hạt macca giòn, béo, giàu dinh dưỡng, tốt cho sức khỏe.</p>
+            </div>
+            <img src="macca.jpg" alt="Hũ hạt macca 500g">
+        </div>
+        <div class="product left-align bonus">
+            <img src="gift-coffee.jpg" alt="Túi cà phê hạt tặng kèm">
+            <div>
+                <h3>🎁 Tặng kèm: 1 Túi Cà Phê Hạt (100g)</h3>
+                <p>Miễn phí 1 túi cà phê hạt nguyên chất để bạn có thể thưởng thức theo cách riêng.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ - Hương và Hạt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #795548;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: #4b2e39;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        button {
+            background-color: #e67e22;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #d35400;
+        }
+        .contact-info {
+            text-align: center;
+            margin-top: 30px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Hương và Hạt</h1>
+        <p>Liên Hệ Với Chúng Tôi</p>
+    </header>
+
+    <div class="container">
+        <h2>Gửi Thông Tin Liên Hệ</h2>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Họ và Tên" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="subject" placeholder="Chủ Đề" required>
+            <textarea name="message" placeholder="Nội dung tin nhắn" required></textarea>
+            <button type="submit">Gửi Liên Hệ</button>
+        </form>
+
+        <div class="contact-info">
+            <h3>Thông Tin Liên Hệ</h3>
+            <p>Địa chỉ: 123 Đường ABC, Quận XYZ, TP.HCM</p>
+            <p>Email: lienhe@huongvahat.com</p>
+            <p>Hotline: 0123 456 789</p>
+        </div>
+            <a href="index.html" class="home-button">Quay về trang chủ</a>
+        </div>
+</body>
+</html>

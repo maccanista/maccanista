@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <meta charset="UTF-8">
+    <head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .header {
+            background-color: #4A341F;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .nav {
+            background-color: #2C1810;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-color: #F5E6D3;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #4A341F;
+            margin-bottom: 1rem;
+        }
+
+        .product-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+       .product-image {
+    width: 562px;
+    height: 751px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .product-info h2 {
+            color: #4A341F;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .price {
+            font-size: 1.8rem;
+            color: #D4741F;
+            font-weight: bold;
+            margin: 1.5rem 0;
+        }
+
+        .features {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .features h3 {
+            color: #4A341F;
+            margin-bottom: 1rem;
+        }
+
+        .features ul {
+            list-style-type: none;
+        }
+
+        .features li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .features li::before {
+            content: "\2713";
+            color: #D4741F;
+            position: absolute;
+            left: 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #D4741F;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 2rem;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #B35F16;
+        }
+
+        @media (max-width: 768px) {
+            .product-section {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Maccanista</h1>
+        <p>Hương vị tinh túy từ thiên nhiên</p>
+    </header>
+
+    <nav class="nav">
+        <a href="#home">Trang chủ</a>
+        <a href="cà phê.html">Sản phẩm</a>
+        <a href="aboutus.html">Về chúng tôi</a>
+        <a href="liên-hệ.html">Liên hệ</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Combo Phin-Mác Hương Ngàn</h1>
+        <p>Trải nghiệm hương vị độc đáo của cà phê phin kết hợp cùng hạt macca thượng hạng</p>
+    </section>
+
+    <section class="product-section">
+        <div class="product-image">
+            <img src="combo" alt="Combo Phin-Mác Hương Ngàn" width="562" height="751">
+        </div>
+        <div class="product-info">
+            <h2>Combo Phin-Mác Hương Ngàn</h2>
+            <div class="features">
+                <h3>Bộ sản phẩm bao gồm:</h3>
+                <ul>
+                    <li>500g cà phê rang xay </li>
+                    <li>500g hạt macca rang muối</li>
+                    <li>Túi thơm hương cà phê hạt (tặng kèm)</li>
+                </ul>
+            </div>
+            <div class="price">
+                399.000đ
+                <span style="font-size: 1rem; color: #666; text-decoration: line-through; margin-left: 1rem">420.000đ</span>
+            </div>
+            <p>Thưởng thức hương vị cà phê đậm đà cùng với hạt macca bổ dưỡng, tạo nên trải nghiệm ẩm thực tuyệt vời. Đặc biệt tặng kèm túi thơm hương cà phê hạt độc đáo.</p>
+            <a href="https://shopee.vn/maccanista" class="cta-button" target="_blank">Đặt hàng ngay</a>
+        </div>
+    </section>
+</body>
+</html>
